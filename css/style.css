@@ -143,14 +143,15 @@ th {
   background-color: #eff1f5;
   background-image: url(../i/sh.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center 10em;
   height: 100%;
   text-align: center;
-  margin-bottom: 5em;
-  padding: 5em;
+  
+  padding: 3em;
+  padding-bottom: 9em;
 }
 .development-sbp__dev {
-  margin-top: 20px;
+ margin-top: 0;
 }
 .development-spb__sh {
   padding-top: 250px;
