@@ -121,54 +121,64 @@ a:hover {
 text-decoration: none; 
 }
 
-.zag {
-font-size: 36px;
+.ots {
+padding-left: 4rem;
+}
+.bg1 {
+background-image: url(../i/bg1.png);
+background-repeat: no-repeat;
+background-size: 100%;
+background-position: right 0px;
 }
 
 
-.abz {
-font-size: 25px;
+li {
+list-style-type: none;
 }
+    
+ul {
+margin-left: 0; 
+padding-left: 0; 
+}
+
+.bg2 {
+background-color: #eff1f5;
+}
+
+    
+td{
+padding: 5px;
+}
+
+th{
+padding: 5px;
+}
+    
+    
 
 /*Header*/
 .header {
 padding: 2rem;
 padding-top: 4rem;
-height: 700px;
+height: 100%;
 font-family: 'Ubuntu';
 }
-
-.header-content {
-padding-top: 150px;
-display: inline-block;
+.header__content {
+margin-top: 7em;
 }
-
-.nav {
+.header__nav {
 margin-top: 10px;
-font-size: 18px;
+font-size: 1em;
 }
-
-.ots {
-padding-left: 4rem;
+.header__phonepic {
+margin-top: 7em;
 }
-
-.bg1 {
-background-image: url(../i/bg1.png);
-background-repeat:no-repeat;
-background-size: 1310px auto;
-background-position: right 0px;
-}
-
-.phonepic {
-padding-top: 50px;
-}
-
-.logo {
+.header__logo {
 display: inline;
 font-size: 30px;
-}
 
-.button-blue {
+}
+.header__button-blue {
   padding: 1rem 2rem;
   margin-top: 2rem;
   width: 116px;
@@ -180,14 +190,13 @@ font-size: 30px;
   margin-left: 4rem;
 }
 
-.button-blue:hover {
+.header__button-blue:hover {
   background-color: #213b66;
   color: #9be8dd;
 }
 
-/*Advantages block*/
-.advantages-sbp {
-height: 500px;
+.header__abz {
+    font-size: 25px;
 }
 
 
@@ -197,86 +206,84 @@ height: 500px;
   background-image: url(../i/sh.png);
   background-repeat:no-repeat;
   background-position: center;
-  height: 550px;
+  height: 100%;
   text-align: center;
+  margin-bottom: 5em;
+  padding: 5em;
 }
 
-.dev {
-margin-top: 80px;
+.development-sbp__dev {
+margin-top: 20px;
 }
 
-.sh {
-margin-top: 250px;
+.development-spb__sh {
+padding-top: 250px;
 }
 
-li {
-list-style-type: none;
-}
-ul {
-margin-left: 0; 
-padding-left: 0; 
-}
-   
-.bg2 {
-background-color: #eff1f5;
+
+
+/*Advantages block verhnii*/
+
+.advantages-sbp {
+height: 100%;
+margin-bottom: 5em;
 }
 
-.adv {
-margin: 0 auto;
-margin: 3rem;
-}
-
+/*Advantages block nignii*/
 .sbp-advantages {
-height: 450px;
-padding: 3rem;
-}  
-
-td{
-padding: 5px;
+height: 100%;
+padding: 2em;
+margin-bottom: 5em;
 }
 
-th{
-padding: 5px;
+.sbp-advantages__adv {
+padding: 2em;
+text-align: center;
 }
-
+    
+/*sbp-people block*/
 .sbp-people {
-height: 800px;
-padding: 5rem;
+
+margin-top: 2em;
+margin-bottom: 4em;
 } 
 
-.k {
-margin-top: 6rem;
+.sbp-people__k {
+margin-top: 2em;
+padding: .5em;
 }
 
-.z {
-font-size: 30px;
-font-weight: bold;
-margin: 0 auto;
-}
-
+/*connect block*/
 .connect {
-padding: 5rem;
-height: 800px;
+padding: 2em;
+height: 100%;
+padding-bottom: 2em;
 }
 
-.sbp-people {
-height: 600px;
+.connect img{
+padding: 2em;
+}
 
-} 
+.connect__wrapper {
+margin: 1em;
+}
 
+
+
+/*contacts block*/
 .contacts {
-padding-top: 5rem;
 
+height: 100%;
 } 
 
-.cop {
+.contacts__cop {
 margin: 0 auto;
 font-size: 10px;
 padding-bottom: 5px;
 }
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
     .nav {
         display: none;
     }
