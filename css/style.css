@@ -141,20 +141,19 @@ th {
 /*Development block*/
 .development-sbp {
   background-color: #eff1f5;
-  background-image: url(../i/sh.png);
   background-repeat: no-repeat;
-  background-position: center 15em;
+  background-position: center;
   height: 100%;
   text-align: center;
-  
-  padding: 3em;
-  padding-bottom: 9em;
+  margin-bottom: 5em;
+  padding: 5em;
 }
 .development-sbp__dev {
- margin-top: 0;
+  margin-top: 20px;
 }
-.development-spb__sh {
-  padding-top: 250px;
+.development-sbp img {
+  margin-bottom: 5em;
+  padding: 5em;
 }
 /*Advantages block verhnii*/
 .advantages-sbp {
@@ -201,11 +200,28 @@ th {
   font-size: 10px;
   padding-bottom: 5px;
 }
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 @media screen and (max-width: 600px) {
-  .nav {
-    display: none;
+  .fc {
+    margin-left: 3em;
   }
-  .lish {
-    display: none;
+  .fc2 {
+    margin-left: 1em;
+  }
+  .header__phonepic img {
+    width: 70%;
+  }
+  .bg1 {
+    background-size: 25%;
+  }
+  .advb:before {
+    content: "•";
+  }
+  .logo {
+    font-size: 8px;
   }
 }
