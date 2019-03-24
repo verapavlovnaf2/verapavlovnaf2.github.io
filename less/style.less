@@ -1,7 +1,7 @@
  /*Basic colors*/ 
- 
  @bg-dark: #99999;
- @blue: #0а65b2;
+ @blue: #0f65b2;
+ @grey: #eff0f5;
  
 /*@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic,cyrillic-ext');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,700i');
@@ -107,6 +107,7 @@ html {
 font-size: 10px;
 background-image: url(../i/bg.png);
 font-family: 'Ubuntu', Sans Serif ;
+color: @bg-dark;
 }
 
 h3 {
@@ -124,13 +125,13 @@ text-decoration: none;
 .ots {
 padding-left: 4rem;
 }
+
 .bg1 {
 background-image: url(../i/bg1.png);
 background-repeat: no-repeat;
 background-size: 100%;
 background-position: right 0px;
 }
-
 
 li {
 list-style-type: none;
@@ -142,10 +143,9 @@ padding-left: 0;
 }
 
 .bg2 {
-background-color: #eff1f5;
+background-color: @grey;
 }
-
-    
+   
 td{
 padding: 5px;
 }
@@ -154,8 +154,6 @@ th{
 padding: 5px;
 }
     
-    
-
 /*Header*/
 .header {
 padding: 2rem;
@@ -176,40 +174,95 @@ margin-top: 7em;
 .header__logo {
 display: inline;
 font-size: 30px;
-
 }
+
 .header__button-blue {
-  padding: 1rem 2rem;
-  margin-top: 2rem;
-  width: 116px;
-  display: block;
-  background-color: #0f65b2;
-  color: #ffffff;
-  font-weight: 500;
-  transition: all 0.3s ease-in-out;
-  margin-left: 4rem;
+padding: 1rem 2rem;
+margin-top: 2rem;
+width: 116px;
+display: block;
+background-color: @blue;
+color: #ffffff;
+font-weight: 500;
+transition: all 0.3s ease-in-out;
+margin-left: 4rem;
 }
 
 .header__button-blue:hover {
-  background-color: #213b66;
-  color: #9be8dd;
+background-color: #213b66;
+color: #9be8dd;
 }
 
 .header__abz {
-  font-size: 25px;
+font-size: 25px;
+}
+
+nav {
+    padding: .5em 2em;
+}
+
+.nav__item {
+    position: relative;
+
+    display: inline-block;
+    padding: 1em 0;
+    margin: 0 1rem;
+    letter-spacing: .15em;
+    color:  #333;
+    text-decoration: none;
+}
+
+.nav__item::before, .nav__item::after {
+    content: '';
+ 
+    position: absolute;
+    bottom: .8em;
+    display: block;
+    width: 0;
+    height: 1px;
+}
+
+.nav__item::before {
+    left: 0;
+
+    transition: width 0s ease;
+    transition: background 0.25s ease;
+}
+
+.nav__item::after {
+    right: 0;
+
+    background: #333;
+
+    transition: width 0.25s ease;
+}
+
+.nav__item:hover::before {
+    width: 100%;
+
+    background: #333;
+
+    transition: width 0.25s ease;
+}
+
+.nav__item:hover::after {
+    width: 100%;
+
+    background: transparent;
+
+    transition: width 0s ease;
 }
 
 
 /*Development block*/
 .development-sbp {
-  background-color: #eff1f5;
-  
-  background-repeat:no-repeat;
-  background-position: center;
-  height: 100%;
-  text-align: center;
-  margin-bottom: 5em;
-  padding: 5em;
+background-color: #eff1f5;
+background-repeat:no-repeat;
+background-position: center;
+height: 100%;
+text-align: center;
+margin-bottom: 5em;
+padding: 5em;
 }
 
 .development-sbp__dev {
@@ -217,17 +270,14 @@ margin-top: 20px;
 }
 
 .development-sbp img {
-  
-    margin-bottom: 5em;
-    padding: 5em;
+margin-bottom: 5em;
+padding: 5em;
 }
 
 .development-spb__sh {
-
 }
 
 /*Advantages block verhnii*/
-
 .advantages-sbp {
 height: 100%;
 margin-bottom: 5em;
@@ -247,18 +297,14 @@ text-align: center;
     
 /*sbp-people block*/
 .sbp-people {
-
 margin-top: 2em;
 margin-bottom: 4em;
 } 
 
 .sbp-people img {
-
-    width: 100%;
-   
-    } 
+width: 100%;
+} 
     
-
 .sbp-people__k {
 margin-top: 2em;
 padding: .5em;
@@ -279,11 +325,8 @@ padding: 2em;
 margin: 1em;
 }
 
-
-
 /*contacts block*/
 .contacts {
-
 height: 100%;
 } 
 
@@ -294,49 +337,34 @@ padding-bottom: 5px;
 }
 
 img {
-    max-width: 100%; 
-    height: auto;
+max-width: 100%; 
+height: auto;
     
 }
 @media screen and (max-width: 700px) {
-    
-	.fc {
-       
-        margin-left: 3em;
-    }
+.fc {
+margin-left: 3em;
+}
 
-    .fc2 {
-       
-        margin-left: 1em;
-    }
+.fc2 {  
+margin-left: 1em;
+}
 
-    .header__phonepic img {
-       
-        width: 70%;
-    }
+.header__phonepic img {
+width: 70%;
+}
 
-    .bg1 {
-    background-size: 25%;
-       
-    }
+.bg1 {
+background-size: 25%;
+}
 
-    .advb:before {
-            content: "•"; 
-            
-           
-    }
+.advb:before {
+content: "•";               
+}
 
-    .logo {
-            font-size: 8px; 
-            
-           
-    }
-
-
-
-
-
-
+.logo {
+font-size: 8px; 
+}
     
 }
 

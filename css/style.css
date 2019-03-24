@@ -63,6 +63,7 @@ html {
   font-size: 10px;
   background-image: url(../i/bg.png);
   font-family: 'Ubuntu', Sans Serif;
+  color: #999999 99;
 }
 h3 {
   font-weight: bold;
@@ -90,7 +91,7 @@ ul {
   padding-left: 0;
 }
 .bg2 {
-  background-color: #eff1f5;
+  background-color: #eff0f5;
 }
 td {
   padding: 5px;
@@ -137,6 +138,52 @@ th {
 }
 .header__abz {
   font-size: 25px;
+}
+nav {
+  padding: .5em 2em;
+}
+.nav__item {
+  position: relative;
+  display: inline-block;
+  padding: 1em 0;
+  margin: 0 1rem;
+  letter-spacing: .15em;
+  color: #333;
+  text-decoration: none;
+}
+.nav__item::before,
+.nav__item::after {
+  content: '';
+  position: absolute;
+  bottom: .8em;
+  display: block;
+  width: 0;
+  height: 1px;
+}
+.nav__item::before {
+  left: 0;
+  -webkit-transition: width 0s ease;
+  transition: width 0s ease;
+  -webkit-transition: background 0.25s ease;
+  transition: background 0.25s ease;
+}
+.nav__item::after {
+  right: 0;
+  background: #333;
+  -webkit-transition: width 0.25s ease;
+  transition: width 0.25s ease;
+}
+.nav__item:hover::before {
+  width: 100%;
+  background: #333;
+  -webkit-transition: width 0.25s ease;
+  transition: width 0.25s ease;
+}
+.nav__item:hover::after {
+  width: 100%;
+  background: transparent;
+  -webkit-transition: width 0s ease;
+  transition: width 0s ease;
 }
 /*Development block*/
 .development-sbp {
