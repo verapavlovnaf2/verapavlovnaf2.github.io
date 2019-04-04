@@ -1,459 +1,253 @@
  /*Basic colors*/ 
- @bg-dark: #99999;
- @blue: #0f65b2;
- @grey: #eff0f5;
+ @bg-light: #fef68a;
+ @bg-dark: #5c5959;
+ @white: #fff;
  
-/*@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic,cyrillic-ext');
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,700i');
+
 /*Fonts*/
 @font-face {
-    font-family: 'Ubuntu';
-    src: url('../fonts/Ubuntu-LightItalic.eot');
-    src: url('../fonts/Ubuntu-LightItalic.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Ubuntu-LightItalic.woff2') format('woff2'),
-        url('../fonts/Ubuntu-LightItalic.woff') format('woff'),
-        url('../fonts/Ubuntu-LightItalic.ttf') format('truetype'),
-        url('../fonts/Ubuntu-LightItalic.svg#Ubuntu-LightItalic') format('svg');
-    font-weight: 300;
-    font-style: italic;
+font-family: 'Gotham Pro';
+src: url('../fonts/GothamPro-Bold.eot');
+src: url('../fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+url('../fonts/GothamPro-Bold.woff2') format('woff2'),
+url('../fonts/GothamPro-Bold.woff') format('woff'),
+url('../fonts/GothamPro-Bold.ttf') format('truetype'),
+url('../fonts/GothamPro-Bold.svg#GothamPro-Bold') format('svg');
+font-weight: bold;
+font-style: normal;
+}
+@font-face {
+font-family: 'Gotham Pro';
+src: url('../fonts/GothamPro-Light.eot');
+src: url('../fonts/GothamPro-Light.eot?#iefix') format('embedded-opentype'),
+url('../fonts/GothamPro-Light.woff2') format('woff2'),
+url('../fonts/GothamPro-Light.woff') format('woff'),
+url('../fonts/GothamPro-Light.ttf') format('truetype'),
+url('../fonts/GothamPro-Light.svg#GothamPro-Light') format('svg');
+font-weight: 300;
+font-style: normal;
+}
+@font-face {
+font-family: 'Gotham Pro';
+src: url('../fonts/GothamPro-Medium.eot');
+src: local('../fonts/Gotham Pro Medium'), local('GothamPro-Medium'),
+url('../fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+url('../fonts/GothamPro-Medium.woff') format('woff'),
+url('../fonts/GothamPro-Medium.ttf') format('truetype');
+font-weight: 500;
+font-style: normal;
 }
 
 @font-face {
-    font-family: 'Ubuntu';
-    src: url('../fonts/Ubuntu-Medium.eot');
-    src: url('../fonts/Ubuntu-Medium.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Ubuntu-Medium.woff2') format('woff2'),
-        url('../fonts/Ubuntu-Medium.woff') format('woff'),
-        url('../fonts/Ubuntu-Medium.ttf') format('truetype'),
-        url('../fonts/Ubuntu-Medium.svg#Ubuntu-Medium') format('svg');
-    font-weight: 500;
-    font-style: normal;
+font-family: 'Gotham Pro';
+src: url('../fonts/GothamPro.eot');
+src: local('../fonts/Gotham Pro'), local('GothamPro'),
+url('../fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
+url('../fonts/GothamPro.woff') format('woff'),
+url('../fonts/GothamPro.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
 }
 
 @font-face {
-    font-family: 'Ubuntu';
-    src: url('../fonts/Ubuntu-Italic.eot');
-    src: url('../fonts/Ubuntu-Italic.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Ubuntu-Italic.woff2') format('woff2'),
-        url('../fonts/Ubuntu-Italic.woff') format('woff'),
-        url('../fonts/Ubuntu-Italic.ttf') format('truetype'),
-        url('../fonts/Ubuntu-Italic.svg#Ubuntu-Italic') format('svg');
-    font-weight: normal;
-    font-style: italic;
+font-family: 'Gotham Pro';
+src: url('../fonts/GothamPro-Black.eot');
+src: local('../fonts/Gotham Pro Black'), local('../fonts/GothamPro-Black'),
+url('../fonts/GothamPro-Black.eot?#iefix') format('embedded-opentype'),
+url('../fonts/GothamPro-Black.woff') format('woff'),
+url('../fonts/GothamPro-Black.ttf') format('truetype');
+font-weight: 900;
+font-style: normal;
 }
 
-@font-face {
-    font-family: 'Ubuntu';
-    src: url('../fonts/Ubuntu-Bold.eot');
-    src: url('../fonts/Ubuntu-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Ubuntu-Bold.woff2') format('woff2'),
-        url('../fonts/Ubuntu-Bold.woff') format('woff'),
-        url('../fonts/Ubuntu-Bold.ttf') format('truetype'),
-        url('../fonts/Ubuntu-Bold.svg#Ubuntu-Bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Ubuntu';
-    src: url('../fonts/Ubuntu-MediumItalic.eot');
-    src: url('../fonts/Ubuntu-MediumItalic.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Ubuntu-MediumItalic.woff2') format('woff2'),
-        url('../fonts/Ubuntu-MediumItalic.woff') format('woff'),
-        url('../fonts/Ubuntu-MediumItalic.ttf') format('truetype'),
-        url('../fonts/Ubuntu-MediumItalic.svg#Ubuntu-MediumItalic') format('svg');
-    font-weight: 500;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Ubuntu';
-    src: url('../fonts/Ubuntu-BoldItalic.eot');
-    src: url('../fonts/Ubuntu-BoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Ubuntu-BoldItalic.woff2') format('woff2'),
-        url('../fonts/Ubuntu-BoldItalic.woff') format('woff'),
-        url('../fonts/Ubuntu-BoldItalic.ttf') format('truetype'),
-        url('../fonts/Ubuntu-BoldItalic.svg#Ubuntu-BoldItalic') format('svg');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Ubuntu';
-    src: url('../fonts/Ubuntu-Light.eot');
-    src: url('../fonts/Ubuntu-Light.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Ubuntu-Light.woff2') format('woff2'),
-        url('../fonts/Ubuntu-Light.woff') format('woff'),
-        url('../fonts/Ubuntu-Light.ttf') format('truetype'),
-        url('../fonts/Ubuntu-Light.svg#Ubuntu-Light') format('svg');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Ubuntu';
-    src: url('../fonts/Ubuntu-Regular.eot');
-    src: url('../fonts/Ubuntu-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Ubuntu-Regular.woff2') format('woff2'),
-        url('../fonts/Ubuntu-Regular.woff') format('woff'),
-        url('../fonts/Ubuntu-Regular.ttf') format('truetype'),
-        url('../fonts/Ubuntu-Regular.svg#Ubuntu-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
 
 /*Basic setting*/
-html {
-font-size: 10px;
-background-image: url(../i/bg.png);
-font-family: 'Ubuntu', Sans Serif ;
+body {
+font-family: 'Gotham Pro';
+font-size: 18px;
 color: @bg-dark;
 }
 
-h3 {
-font-weight: bold;
-}
+.header__content__raz img {
 
-h4 {
-    font-weight: bold;
-    }
-    
-h5 {
-font-weight: bold;
-}
-
-a:hover { 
-text-decoration: none; 
-}
-
-.ots {
-padding-left: 4rem;
-}
-
-.bg1 {
-background-image: url(../i/bg1.png);
-background-repeat: no-repeat;
-background-size: 100%;
-background-position: right 0px;
-}
-
-li {
-list-style-type: none;
-}
-    
-ul {
-margin-left: 0; 
-padding-left: 0; 
-}
-
-.bg2 {
-background-color: @grey;
-}
-   
-td{
-padding: 5px;
-}
-
-th{
-padding: 5px;
-}
-    
-/*Header*/
-.header {
-padding: 2rem;
-padding-top: 4rem;
-height: 100%;
-font-family: 'Ubuntu';
-}
-.header__content {
-margin-top: 7em;
-}
-.header__nav {
-margin-top: 10px;
-font-size: 1em;
-}
-.header__phonepic {
-margin-top: 7em;
-}
-.header__logo {
-display: inline;
-font-size: 30px;
-}
-
-.header__button-blue {
-padding: 1rem 2rem;
-margin-top: 2rem;
-width: 116px;
-display: block;
-background-color: @blue;
-color: #ffffff;
-font-weight: 500;
-transition: all 0.3s ease-in-out;
-margin-left: 4rem;
-}
-
-.header__button-blue:hover {
-background-color: #213b66;
-color: #9be8dd;
-}
-
-.header__abz {
-font-size: 25px;
-}
-
-nav {
-padding: .5em 2em;
-}
-
-.nav__item {
-position: relative;
-display: inline-block;
-padding: 1em 0;
-margin: 0 1rem;
-letter-spacing: .15em;
-color:  #333;
-text-decoration: none;
-}
-
-.nav__item::before, .nav__item::after {
-    content: '';
-position: absolute;
-bottom: .8em;
-display: block;
-width: 0;
-height: 1px;
-}
-
-.nav__item::before {
-left: 0;
-transition: width 0s ease;
-transition: background 0.25s ease;
-}
-
-.nav__item::after {
-right: 0;
-background: #333;
-transition: width 0.25s ease;
-}
-
-.nav__item:hover::before {
-width: 100%;
-background: #333;
-transition: width 0.25s ease;
-}
-
-.nav__item:hover::after {
-width: 100%;
-background: transparent;
-transition: width 0s ease;
-}
-
-
-/*Development block*/
-.development-sbp {
-background-color: #eff1f5;
-background-repeat:no-repeat;
-background-position: center;
-height: 100%;
-text-align: center;
-margin-bottom: 5em;
-padding: 5em;
-}
-
-.development-sbp__dev {
-margin-top: 20px;
-}
-
-.development-sbp img {
-margin-bottom: 5em;
-padding: 5em;
-}
-
-.development-spb__sh {
-}
-
-/*Advantages block verhnii*/
-.advantages-sbp {
-height: 100%;
-margin-bottom: 5em;
-}
-
-/*Advantages block nignii*/
-.sbp-advantages {
-height: 100%;
-padding: 2em;
-margin-bottom: 5em;
-}
-
-.sbp-advantages__adv {
-padding: 2em;
-text-align: center;
-}
-    
-/*sbp-people block*/
-.sbp-people {
-margin-top: 2em;
-margin-bottom: 4em;
-} 
-
-.sbp-people img {
-width: 100%;
-} 
-    
-.sbp-people__k {
-margin-top: 2em;
-padding: .5em;
-}
-
-/*connect block*/
-.connect {
-padding: 2em;
-height: 100%;
-padding-bottom: 2em;
-}
-
-.connect img{
-padding: 2em;
-}
-
-.connect__wrapper {
-margin: 1em;
-}
-
-/*contacts block*/
-.contacts {
-height: 100%;
-font-size: 1.2em;
-} 
-
-.contacts__cop {
-margin: 0 auto;
-font-size: 10px;
-padding-bottom: 5px;
-}
-
-.sbp-advantages__adv {
-padding: 2em;
-text-align: center;
-}
-
-    
-img {
-max-width: 100%; 
 height: auto;
-    
-}
-@media screen and (max-width: 700px) {
-.fc {
-margin-left: 3em;
 }
 
-.fc2 {  
-margin-left: 1em;
-}
 
-.header__phonepic img {
+/*Header block*/
+.header {
+padding-top: 2em;
+padding-left: 4em;
+padding-right: 10em;
+padding-bottom: 5em; 
+font-size: 20px; 
+}
+.header__bg {
+background-image: url(../i/verhbg.png);
+background-image: url(../i/kv_verh.png);
+background-repeat: no-repeat;
+height: 80%;
+}
+.header__about__zag {
+font-size: 30px;
+font-weight: bold;
+}
+.header__about__line {
+padding-right: 0.7em;
+}
+.header__about {
+padding-top: 10rem;
+height: 100%;
+background-size: cover;
+}
+.header__content__raz{
+padding-top: -10rem;
 width: 70%;
+display: block;
+max-width: 100%;
+height: auto;
 }
 
-.bg1 {
-background-size: 25%;
+
+
+/*Infgroup block*/
+.igroup {
+display: flex;
+}
+.igroup__bg {
+background-image: url(../i/kv_ser.png);
+background-repeat: no-repeat;	
+background-position: top right;
+}
+.igroup__block__creddy {
+box-shadow: 0 0 10px rgba(14,217,210,0.5);
+padding-top: 19em;
+padding-left: 2em;
+padding-right: 2em;
+height: 44em;
+background-image: url(../i/ocred.png);
+background-repeat: no-repeat;
+background-position: right top;
+border-radius: 11px;
+}
+.igroup__block__finance {
+box-shadow: 0 0 10px rgba(14,217,210,0.5);
+padding-top: 19em;
+padding-left: 2em;
+padding-right: 2em;
+height: 44em;
+background-image: url(../i/finance.png);
+background-repeat: no-repeat;
+background-position: right top;
+border-radius: 11px;
+}
+.igroup__block__trade {
+box-shadow: 0 0 10px rgba(14,217,210,0.5);
+padding-top: 19em;
+padding-left: 2em;
+padding-right: 2em;
+height: 44em;
+background-image: url(../i/instrum.png);
+background-repeat: no-repeat;
+background-position: right top;
+border-radius: 11px;
+}
+.igroup__abzac {
+padding-top: 2em;
+}
+.igroup__line {
+padding-right: 0.7em;
+}
+.igroup__zag {
+font-size: 24px;
+font-weight: bold;
+padding-left: .5em;
 }
 
-.advb:before {
-content: "•";               
-}
 
-.logo {
-font-size: 8px; 
+/*Investblock*/
+.invest {
+padding: 4em;
+height: 20em;
 }
-    
-.l {
-display: none; 
+.invest__bg {
+background-image: url(../i/niz_kv.png);
+background-repeat: no-repeat;
+height: 80%;	
+background-position: top left;
 }
-
-.line {
-display: none; 
+.invest__investbl {
+text-align: center;
+padding: 2em;
+padding-top: 7em;
 }
-
-.nav {
-display: none;
+.invest__contacts {
+padding-top: 5em;
+}
+.invest__zag {
+font-size: 24px;
+font-weight: bold;
+}
+.invest__copyright {
+text-align: center;
+padding: 2em;
 font-size: 12px;
-word-wrap: normal;
-word-break: normal;
-margin-top: 2em;
+padding-top: 7em;
+color: #666;
 }
 
-.nav__item  {
-float: left;
+@media screen and (max-width: 700px) {
+
+
+
+body {
+font-size: 14px;
 }
 
-
-
-.header__content {
-margin-top: 2em;
-margin-left: 0;
+.header__bg {
+background-image: url(../i/kv_verh_mobile.png);
+background-repeat: no-repeat;
 }
 
-.advb  {
-padding-top: 2em;
+.header {
+  font-size: 14px;
+}
+  
+
+.header__about__zag {
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.advantages-sbp {
-padding-top: 2em;
-padding-left: 0.2em;
+.igroup__bg {
+background-image: url(../i/kv_ser_mobile.png);
+background-repeat: no-repeat;
 }
 
-.op {
-padding-top: 3em;       
+.invest__bg {
+background-image: url(../i/niz_kv_mobile.png);
+background-repeat: no-repeat;
 }
-
-
-.connect {
-padding-top: 3em;
-padding-left: 0.2em;
-}
-
-
-.sbp-advantages{
-text-align: left;
-}
-
-.sbp-advantages__adv{
-text-align: left;
-margin-left: 0;
-padding-left: 2.4em;
-}
-
-
-.sbp-people  {
-padding-left: 0.2em;
-}
-
-.contacts  {
-padding-left: 0;
-margin-left: 0;
-text-align: left;
-}
-
-.conr {
-    padding-left: 4em;
-    text-align: left;
-    }
-
-
-.contacts__cop {
-        padding-left: 7em;
-        padding-bottom: 5px;
-}
-        
-}
-
-
-@media screen and (min-width: 700px) {
-.phone-mobile {
+.header__content__raz img {
+width: 90%;
 display: none;
 }
-    
-}
 
+.igroup__block__creddy {
+ margin-top: 2em;
+ margin-left: 1em;
+ margin-right: 1em;
+  }
+  .igroup__block__finance {
+ margin-top: 2em;
+ margin-left: 1em;
+ margin-right: 1em;
+  }
+  .igroup__block__trade {
+ margin-top: 2em;
+ margin-left: 1em;
+ margin-right: 1em;
+ }
+
+}
+  
