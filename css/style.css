@@ -56,7 +56,6 @@ body {
   background-image: url(../i/verhbg.png);
   background-image: url(../i/kv_verh.png);
   background-repeat: no-repeat;
-  height: 80%;
 }
 .header__about__zag {
   font-size: 30px;
@@ -66,9 +65,11 @@ body {
   padding-right: 0.7em;
 }
 .header__about {
-  padding-top: 10rem;
   height: 100%;
   background-size: cover;
+}
+.header__content__left {
+  padding-top: 10rem;
 }
 .header__content__raz {
   padding-top: -10rem;
