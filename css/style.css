@@ -54,7 +54,7 @@ body {
 }
 .header__bg {
   background-image: url(../i/verhbg.png);
-  background-image: url(../i/kv_verh.png);
+  background-image: url(../i/okv_verh.png);
   background-repeat: no-repeat;
 }
 .header__about__zag {
@@ -72,12 +72,12 @@ body {
   padding-top: 10rem;
 }
 .header__content__raz {
-  padding-top: -10rem;
-  width: 70%;
-  display: block;
-  max-width: 100%;
-  height: auto;
+  height: 100%;
 }
+/*<animate id="kvad3" attributeType="CSS" attributeName="opacity" from=".1" to="1" dur="2s" repeatCount="infinite" />
+
+
+
 /*Infgroup block*/
 .igroup {
   display: -webkit-box;
@@ -85,7 +85,7 @@ body {
   display: flex;
 }
 .igroup__bg {
-  background-image: url(../i/kv_ser.png);
+  background-image: url(../i/okv_ser.png);
   background-repeat: no-repeat;
   background-position: top right;
 }
@@ -142,7 +142,7 @@ body {
   height: 20em;
 }
 .invest__bg {
-  background-image: url(../i/niz_kv.png);
+  background-image: url(../i/oniz_kv.png);
   background-repeat: no-repeat;
   height: 80%;
   background-position: top left;
